@@ -1,0 +1,8 @@
+debhelper-build-stamp
+files
+*.debhelper.log
+*.postinst.debhelper
+*.prerm.debhelper
+*.substvars
+python-asn1ate/
+python3-asn1ate/

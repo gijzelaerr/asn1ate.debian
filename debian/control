@@ -1,0 +1,40 @@
+Source: asn1ate
+Section: python
+Priority: optional
+Maintainer: KERN packaging <packaging@kernsuite.info>
+Build-Depends:
+ debhelper (>=9),
+ dh-python,
+ python-all (>= 2.6.6-3~),
+ python-setuptools,
+ python-pyparsing,
+ python3-all,
+ python3-setuptools,
+ python3-pyparsing
+Standards-Version: 3.9.7
+Homepage: https://github.com/kimgr/asn1ate
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+Vcs-Git: https://github.com/gijzelaerr/asn1ate.debian
+Vcs-Browser: https://github.com/gijzelaerr/asn1ate.debian
+
+Package: python-asn1ate
+Architecture: all
+Provides: ${python:Provides}
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Python library for translating ASN.1 into other forms (Python 2)
+ It is intended for code generation from formal ASN.1 definitions, and a
+ code generator for pyasn1 is included.
+ .
+ This package installs the library for Python 2.
+
+Package: python3-asn1ate
+Architecture: all
+Provides: ${python3:Provides}
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Python library for translating ASN.1 into other forms (Python 3)
+ It is intended for code generation from formal ASN.1 definitions, and a
+ code generator for ``pyasn1`` is included.
+ .
+ This package installs the library for Python 3.
+
