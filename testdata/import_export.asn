@@ -1,0 +1,14 @@
+MyASN1Module DEFINITIONS ::=
+
+BEGIN
+
+EXPORTS ALL;
+
+IMPORTS DataType FROM OtherASN1Module;
+
+MyType ::= INTEGER
+
+MySet ::= SET {MyType, BOOLEAN}
+
+END --MyASN1Module
+
